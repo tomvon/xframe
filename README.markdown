@@ -1,6 +1,6 @@
-# XFrame (BETA)
+#XFrame (BETA)#
 
-## A responsive front end framework for data rich web applications.
+##A responsive front end framework for data rich web applications.##
 
 XFrame is CSS and Javascript geared specifically for data rich web applications. The three main goals for XFrame are: 
 
@@ -10,7 +10,7 @@ XFrame is CSS and Javascript geared specifically for data rich web applications.
 
 ****
 
-### Features
+###Features###
 
 - Supports semantic HTML.
 -  Built in responsive navigation based on an standard unordered list (UL). Supports sub navigations items (nested ULs).
@@ -23,6 +23,6 @@ XFrame is CSS and Javascript geared specifically for data rich web applications.
 
 ****
 
-### Documentation
+###Documentation###
 
 Work in progress…
