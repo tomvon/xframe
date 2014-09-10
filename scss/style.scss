@@ -312,7 +312,10 @@ form {
         padding: 0 5px 0 5px;
         border-radius: 3px;
     }
-    
+    .xgroup {
+        clear: both;
+        overflow: hidden;
+    }
     .xpost {
         background: #ffffff;
         padding: 3%;
@@ -446,6 +449,11 @@ form {
     
     .xcontent {
         margin: 0;
+        .xgroup {
+            .xpost {
+                width: 48%;
+            }
+        }
         .xpost {
             padding: 2%;
             margin: 1%;
@@ -478,6 +486,11 @@ form {
         float: left;
         position: relative;
         z-index: 15;
+        .xgroup {
+            .xpost {
+                width: 31%;
+            }
+        }
         .xpost {
             padding: 1%;
             margin: 1%;

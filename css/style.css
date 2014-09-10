@@ -264,6 +264,9 @@ form {
     background: #f6f6f6;
     padding: 0 5px 0 5px;
     border-radius: 3px; }
+  .xcontent .xgroup {
+    clear: both;
+    overflow: hidden; }
   .xcontent .xpost {
     background: #ffffff;
     padding: 3%;
@@ -369,6 +372,8 @@ form {
 
   .xcontent {
     margin: 0; }
+    .xcontent .xgroup .xpost {
+      width: 48%; }
     .xcontent .xpost {
       padding: 2%;
       margin: 1%; } }
@@ -391,6 +396,8 @@ form {
     float: left;
     position: relative;
     z-index: 15; }
+    .xcontent .xgroup .xpost {
+      width: 31%; }
     .xcontent .xpost {
       padding: 1%;
       margin: 1%; }
