@@ -20,7 +20,12 @@ a:hover {
 
 img {
   display: block;
-  width: 100%; }
+  width: 100%;
+  border-radius: 3px; }
+
+img.xfeature {
+  cursor: pointer;
+  box-shadow: 0 0 2px #333333; }
 
 div {
   box-sizing: border-box; }
@@ -48,7 +53,7 @@ td.yellow {
   background: #ffffee; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 2% 0 5% 0;
+  margin: 1% 0 1% 0;
   color: #333333; }
 
 h1 {
@@ -143,9 +148,9 @@ form {
     margin: 1% 0 1% 0;
     line-height: 1.2em; }
     .xheader h1 .xlogo {
-      width: 30px;
+      width: 16px;
       display: inline-block;
-      margin: 0 1% -1% 0;
+      margin: 0 1% 0 0;
       border-radius: 3px; }
   .xheader a {
     color: #000000; }
@@ -253,7 +258,8 @@ form {
 
 .xcontent {
   float: left;
-  margin: 2% 0 0 0; }
+  margin: 2% 0 0 0;
+  width: 100%; }
   .xcontent a {
     background: #f6f6f6;
     padding: 0 5px 0 5px;
@@ -267,6 +273,8 @@ form {
     overflow: auto;
     border-radius: 2px;
     position: relative; }
+    .xcontent .xpost img {
+      margin: 0 0 10px 0; }
 
 .xfooter {
   margin-bottom: 10%;
@@ -283,7 +291,7 @@ form {
   right: 5px;
   bottom: 5px;
   left: 5px;
-  box-shadow: 0 0 5px #666666;
+  box-shadow: 0 0 20px #000000;
   z-index: 49;
   border-radius: 3px; }
   .xover .xdata {
@@ -295,19 +303,27 @@ form {
     bottom: 0;
     left: 0;
     overflow: -moz-scrollbars-vertical;
-    overflow: scroll; }
+    overflow: auto;
+    box-shadow: none; }
+    .xover .xdata img.xfeature {
+      width: auto;
+      max-width: 100%;
+      margin: 2% auto 2% auto;
+      cursor: auto; }
   .xover a.close {
     position: fixed;
-    top: 5px;
-    right: 5px;
+    top: 7px;
+    right: 7px;
     z-index: 50;
-    background: #888888;
+    background: #333333;
     border-radius: 3px;
     padding: 5px 10px 5px 10px;
     color: #ffffff;
     font-weight: bold;
     font-size: 1em;
     cursor: pointer; }
+  .xover a.close:hover {
+    background: #555555; }
 
 .viewdata {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjg0ODM0RjZDMkJEMjExRTRBMTIxQ0I0ODU3OTI0NUU0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjg0ODM0RjZEMkJEMjExRTRBMTIxQ0I0ODU3OTI0NUU0Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ODQ4MzRGNkEyQkQyMTFFNEExMjFDQjQ4NTc5MjQ1RTQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6ODQ4MzRGNkIyQkQyMTFFNEExMjFDQjQ4NTc5MjQ1RTQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6ubFV3AAAAG0lEQVR42mJkYGBwYCACMDEQCUYVUkchQIABAHceAFQMjNAFAAAAAElFTkSuQmCC);
@@ -336,9 +352,6 @@ form {
     font-size: .9em;
     padding: 1%; }
 
-  h1, h2, h3, h4, h5, h6 {
-    margin: 1% 0 2% 0; }
-
   .xheader, .xfooter {
     padding: 1% 1% 1% 2%; }
 
@@ -357,12 +370,9 @@ form {
   .xcontent {
     margin: 0; }
     .xcontent .xpost {
-      padding: 3%;
+      padding: 2%;
       margin: 1%; } }
 @media only screen and (min-width: 800px) {
-  h1, h2, h3, h4, h5, h6 {
-    margin: 1% 0 2% 0; }
-
   .xheader {
     float: left;
     width: 70%; }
@@ -382,7 +392,7 @@ form {
     position: relative;
     z-index: 15; }
     .xcontent .xpost {
-      padding: 2%;
+      padding: 1%;
       margin: 1%; }
 
   .xfooter {
@@ -411,13 +421,4 @@ form {
           width: 100%; }
     .xnav ul li:nth-child(4n+4) {
       width: 25%;
-      margin-right: 0; }
-
-  /*
-      .xnav {
-          display: block;
-          float: left;
-          width: 18%;
-          margin-top: 1%;
-      }
-  */ }
+      margin-right: 0; } }

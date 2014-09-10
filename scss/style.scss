@@ -80,6 +80,12 @@ a:hover {
 img {
     display: block;
     width: 100%;
+    border-radius: 3px;
+}
+
+img.xfeature {
+    cursor: pointer;
+    box-shadow: 0 0 2px #333333;
 }
 
 div {
@@ -115,7 +121,7 @@ td.yellow {
 }
 
 h1, h2, h3, h4, h5 , h6 {
-    margin: 2% 0 5% 0;
+    margin: 1% 0 1% 0;
     color: #333333;
 }
 
@@ -220,9 +226,9 @@ form {
         margin: 1% 0 1% 0;
         line-height: 1.2em;
         .xlogo {
-            width: 30px;
+            width: 16px;
             display: inline-block;
-            margin: 0 1% -1% 0;
+            margin: 0 1% 0 0;
             border-radius: 3px;
         }
     }
@@ -300,6 +306,7 @@ form {
 .xcontent {
     float: left;
     margin: 2% 0 0 0;
+    width: 100%;
     a {
         background: #f6f6f6;
         padding: 0 5px 0 5px;
@@ -315,6 +322,9 @@ form {
         overflow: auto;
         border-radius: 2px;
         position: relative;
+        img {
+            margin: 0 0 10px 0;
+        }
     }
     
 }
@@ -336,7 +346,7 @@ form {
     right: 5px;
     bottom: 5px;
     left: 5px;
-    box-shadow: 0 0 5px #666666;
+    box-shadow: 0 0 20px #000000;
     z-index: 49;
     border-radius: 3px;
     .xdata {
@@ -348,20 +358,30 @@ form {
         bottom: 0;
         left: 0;
         overflow: -moz-scrollbars-vertical;
-        overflow: scroll;
+        overflow: auto;
+        box-shadow: none;
+        img.xfeature {
+            width: auto;
+            max-width: 100%;
+            margin: 2% auto 2% auto;
+            cursor: auto;
+        }
     }
     a.close {
         position: fixed;
-        top: 5px;
-        right: 5px;
+        top: 7px;
+        right: 7px;
         z-index: 50;
-        background: #888888;
+        background: #333333;
         border-radius: 3px;
         padding: 5px 10px 5px 10px;
         color: #ffffff;
         font-weight: bold;
         font-size: 1em;
         cursor: pointer;
+    }
+    a.close:hover {
+        background: #555555;
     }
 }
 
@@ -398,10 +418,6 @@ form {
         padding: 1%;
     }
     
-    h1, h2, h3, h4, h5 , h6 {
-        margin: 1% 0 2% 0;
-    }
-    
     .xheader, .xfooter {
         padding: 1% 1% 1% 2%;
     }
@@ -431,7 +447,7 @@ form {
     .xcontent {
         margin: 0;
         .xpost {
-            padding: 3%;
+            padding: 2%;
             margin: 1%;
         }
     }
@@ -440,10 +456,6 @@ form {
 
 // Large screens
 @media only screen and (min-width: 800px) { 
-
-    h1, h2, h3, h4, h5 , h6 {
-        margin: 1% 0 2% 0;
-    }
     
     .xheader {
         float: left;
@@ -467,7 +479,7 @@ form {
         position: relative;
         z-index: 15;
         .xpost {
-            padding: 2%;
+            padding: 1%;
             margin: 1%;
         }
     }
@@ -509,14 +521,5 @@ form {
             }
         }
     }
-    
-/*
-    .xnav {
-        display: block;
-        float: left;
-        width: 18%;
-        margin-top: 1%;
-    }
-*/
     
 }
