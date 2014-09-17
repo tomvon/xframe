@@ -49,7 +49,7 @@
 
     <div class="xgroup">
 
-        <div class="xpost" xcoll="8" xcolm="4">
+        <div class="xpost xmed-4 xlg-8">
         
             <table>
                 <thead>
@@ -91,7 +91,7 @@
             </table>
         
         </div>
-        <div class="xpost" xcoll="4" xcolm="8">
+        <div class="xpost xlg-4 xmed-8">
             <h2>Overview</h2>
             <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
         </div>
@@ -100,19 +100,19 @@
     
     <div class="xgroup">
 
-        <div class="xpost" xcoll="3" xcolm="6">
+        <div class="xpost xlg-3 xmed-6">
             <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
         </div>
         
-        <div class="xpost" xcoll="3" xcolm="6">
+        <div class="xpost xlg-3 xmed-6">
             <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours.</p>
         </div>
         
-        <div class="xpost" xcoll="3" xcolm="6">
+        <div class="xpost xlg-3 xmed-6">
             <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
         </div>
         
-        <div class="xpost" xcoll="3" xcolm="6">
+        <div class="xpost xlg-3 xmed-6">
             <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally. No latency detected in any networks.</p>
         </div>
         
@@ -120,7 +120,7 @@
     
     <div class="xgroup">
     
-        <div class="xpost" xcoll="4" xcolm="6">
+        <div class="xpost xlg-4 xmed-6">
             <h3>Network Monitoring</h3>
             <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
             <p class="meta">
@@ -131,7 +131,7 @@
             </p>
         </div>
     
-        <div class="xpost" xcoll="4" xcolm="6">
+        <div class="xpost xlg-4 xmed-6">
             <form method="post" action="/">
                 <fieldset>
                     <label for="name">Name</label>
@@ -162,7 +162,7 @@
             </form>
         </div>
     
-        <div class="xpost" xcoll="4" xcolm="6">
+        <div class="xpost xlg-4 xmed-6">
             <h3>Network Monitoring</h3>
             <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
             <p class="meta">
@@ -173,7 +173,7 @@
             </p>
         </div>
         
-        <div class="xpost" xcoll="4" xcolm="6">
+        <div class="xpost xlg-4 xmed-6">
             <h3>Network Monitoring</h3>
             <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
             <p class="meta">
@@ -184,7 +184,7 @@
             </p>
         </div>
         
-        <div class="xpost" xcoll="4" xcolm="6">
+        <div class="xpost xlg-4 xmed-6">
             <h3>Network Monitoring</h3>
             <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
             <p class="meta">
@@ -199,7 +199,7 @@
     
     <div class="xgroup">
     
-        <div class="xpost" xcoll="4" xcolm="6">
+        <div class="xpost xlg-4 xmed-6">
             <h3>Network Monitoring</h3>
             <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
             <p class="meta">
@@ -210,7 +210,7 @@
             </p>
         </div>
         
-        <div class="xpost" xcoll="4" xcolm="6">
+        <div class="xpost xlg-4 xmed-6">
             <h3>Network Monitoring</h3>
             <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
             <p class="meta">
@@ -221,7 +221,7 @@
             </p>
         </div>
         
-        <div class="xpost" xcoll="4" xcolm="6">
+        <div class="xpost xlg-4 xmed-6">
             <h3>Network Monitoring</h3>
             <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
             <p class="meta">

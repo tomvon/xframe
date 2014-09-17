@@ -1,16 +1,27 @@
 function sizer(s) {
+
     $('.xgroup').each( function() {
         boxes = []
         len = 0
         total = $(this).children().length - 1;
         $(this).children().each( function(index) {
-            $(this).css({'height':'auto'});
-            $(this).css({'width':'98%'});
-            if ($(this).attr(s)) {
+            if ($('body.xblocks').length == 1) {
+                $(this).css({'height':'auto'});
+                $(this).css({'width':'100%'});
+            } else {
+                $(this).css({'height':'auto'});
+                $(this).css({'width':'98%'});
+            }
+            if (this.className.match(s+"\\d")) {
+                cols = this.className.match(s+"\\d")[0].split("-")[1];
                 boxes.push($(this))
-                w = ((($(this).attr(s) / 12) * 100) - 2);
+                if ($('body.xblocks').length == 1) {
+                    w = (((cols / 12) * 100));
+                } else {
+                    w = (((cols / 12) * 100) - 2);
+                }
                 $(this).css({'width':w+'%'});
-                len = len + parseInt($(this).attr(s));
+                len = len + parseInt(cols);
                 if ( (len == 12) || (index == total) ) {
                     heights = []
                     $(boxes).each( function() {
@@ -30,15 +41,20 @@ function sizer(s) {
 
 function setsize() {
     if ($(window).width() >= 800) {
-        sizer('xcoll');
+        sizer('xlg-');
     }
     if ($(window).width() < 800) {
-        sizer('xcolm');
+        sizer('xmed-');
     }
     if ($(window).width() < 500) {
         $('.xpost').each( function() {
-            $(this).css({'width':'98%'});
-            $(this).css({'height':'auto'});
+            if ($('body.xblocks').length == 1) {
+                $(this).css({'width':'100%'});
+                $(this).css({'height':'auto'});
+            } else {
+                $(this).css({'width':'98%'});
+                $(this).css({'height':'auto'});
+            }
         });
     }
 }
@@ -61,6 +77,10 @@ function tablelaunch() {
         }
     });
 }
+
+$(window).load( function() {
+    setsize();
+});
 
 $(document).ready(function() {
     setsize();
@@ -90,9 +110,34 @@ $(document).ready(function() {
         return false;
     });
     
+    $(document).keyup(function(e) {
+      if (e.keyCode == 13) { // enter
+        //
+      }
+      if (e.keyCode == 27) { // esc
+        $('.xover').fadeOut('fast')
+        $('.xover .xdata').html('');
+        return false;
+      }
+    });
+    
+    $(document).keypress(function(e) { 
+        if (e.keyCode == 27) { 
+            $('.xover').fadeOut('fast')
+            $('.xover .xdata').html('');
+            return false;
+        } 
+    });
+    
     if ($('#xmenu').length == 0) {
         $('.xheader').css({'width':'98%'});
     }
+    
+    $('img.xfeature').each( function() {
+        if ($(this).attr('data-lg')) {
+            $(this).css({'cursor':'pointer'});
+        }
+    });
     
     $('img.xfeature').on('click', function() {
         if ($(this).attr('data-lg')) {

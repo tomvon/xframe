@@ -79,7 +79,6 @@ a:hover {
 
 img {
     display: block;
-    width: 100%;
     border-radius: 3px;
 }
 
@@ -199,6 +198,22 @@ form {
     }
     input[type=submit]:hover {
         background: #cccccc;
+    }
+}
+
+body.xblocks {
+    padding: 0;
+    .xgroup {
+        .xpost {
+            margin: 0;
+            width: 100%;
+            border-radius: 0;
+        }
+    }
+    .xheader, .xnav, .xfooter, #xmenu, .xcontent {
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
     }
 }
 
@@ -322,7 +337,7 @@ form {
         margin: 1% 1% 3% 1%;
         float: left;
         width: 98%;
-        overflow: auto;
+        overflow: hidden;
         border-radius: 2px;
         position: relative;
         img {
@@ -413,6 +428,17 @@ form {
     }
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
 // Medium screens
 @media only screen and (min-width: 500px) { 
     
@@ -450,8 +476,41 @@ form {
     .xcontent {
         margin: 0;
         .xgroup {
-            .xpost {
+            .xpost.xmed-1 {
+                width: 6%;
+            }
+            .xpost.xmed-2 {
+                width: 14%;
+            }
+            .xpost.xmed-3 {
+                width: 23%;
+            }
+            .xpost.xmed-4 {
+                width: 31%;
+            }
+            .xpost.xmed-5 {
+                width: 39%;
+            }
+            .xpost.xmed-6 {
                 width: 48%;
+            }
+            .xpost.xmed-7 {
+                width: 56%;
+            }
+            .xpost.xmed-8 {
+                width: 64%;
+            }
+            .xpost.xmed-9 {
+                width: 74%;
+            }
+            .xpost.xmed-10 {
+                width: 23%;
+            }
+            .xpost.xmed-11 {
+                width: 81%;
+            }
+            .xpost.xmed-12 {
+                width: 98%;
             }
         }
         .xpost {
@@ -487,8 +546,41 @@ form {
         position: relative;
         z-index: 15;
         .xgroup {
-            .xpost {
+            .xpost.xlg-1 {
+                width: 6%;
+            }
+            .xpost.xlg-2 {
+                width: 14%;
+            }
+            .xpost.xlg-3 {
+                width: 23%;
+            }
+            .xpost.xlg-4 {
                 width: 31%;
+            }
+            .xpost.xlg-5 {
+                width: 39%;
+            }
+            .xpost.xlg-6 {
+                width: 48%;
+            }
+            .xpost.xlg-7 {
+                width: 56%;
+            }
+            .xpost.xlg-8 {
+                width: 64%;
+            }
+            .xpost.xlg-9 {
+                width: 74%;
+            }
+            .xpost.xlg-10 {
+                width: 23%;
+            }
+            .xpost.xlg-11 {
+                width: 81%;
+            }
+            .xpost.xlg-12 {
+                width: 98%;
             }
         }
         .xpost {
