@@ -35,11 +35,13 @@ XFrame comes with a sample PHP site to preview a working example. Just view the 
 
 Include the meta viewport tag to ensure pages render appropriately on all screen size. Include a link to XFrame's style.css file.
 
+'''html
     <head>
-	    <title>XFrame</title>
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	    <link rel="stylesheet" type="css" href="/css/style.css">
+        <title>XFrame</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="css" href="/css/style.css">
     </head>
+'''
 
 ###Overlays###
 
