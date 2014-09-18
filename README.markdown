@@ -29,7 +29,7 @@ XFrame is CSS and Javascript geared specifically for data rich web applications.
 
 ###Usage###
 
-Simply link to XFrame's **xframe.css** and **xframe.js** files from you web page.
+Simply link to XFrame's **xframe.css** and **xframe.js** files from your web page.
 
 ****
 
