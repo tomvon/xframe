@@ -119,7 +119,7 @@ These are optional. You can include just the xheader by itself if you wish. The 
 
 ###Content###
 
-The page's main content are must be contained in an xcontent div.
+The page's main content must be contained in an xcontent div.
 
 ```html
 <div class="xcontent">
@@ -129,7 +129,7 @@ The page's main content are must be contained in an xcontent div.
 
 ###Groups and Posts###
 
-Post are individual boxes of content contained within an xpost classed div. All groups of Posts must be contained within an xgroup div. An xgroup can contain one post or all posts on a page. It allows for better grouping of content as needed.
+Posts are individual boxes of content within an xpost classed div. All Posts must be contained within an xgroup div. An xgroup can contain one post or all posts on a page. It allows for better grouping of content as needed.
 
 ```html
 <div class="xgroup">
@@ -150,7 +150,7 @@ Post are individual boxes of content contained within an xpost classed div. All 
 
 ###12 Column Grid System###
 
-XFrame has breakpoints for small, medium and large screens. To establish a layout for each case you use the xlg- and xmed- classes for posts. If neither class is set the post will be the full with of the enclosing div. You specify the number of columns a post should take up by appending a number to the classes like xlg-6 for 6 columns on large screens.
+XFrame has breakpoints for small, medium and large screens. To establish a layout for each case use the xlg- and xmed- classes for posts. If neither class is set the post will be the full with of the enclosing div. You specify the number of columns a post should take up by appending a number to the classes like xlg-6 for 6 columns on large screens.
 
 In the example below there will be a row of 4 boxes on large screens (3 columns + 3 columns + 3 columns + 3 columns = 12 columns) and a row of 2 boxes on medium screens (6 columns + 6 columns = 12 columns). The heights of all posts in the same row will be equalized, based on the tallest content, automatically.
 
