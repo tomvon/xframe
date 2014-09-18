@@ -27,6 +27,12 @@ XFrame is CSS and Javascript geared specifically for data rich web applications.
 
 ****
 
+###Usage###
+
+Simply link to XFrame's **xframe.css** and **xframe.js** files from you web page.
+
+****
+
 ###Documentation###
 
 XFrame comes with a sample PHP site to preview a working example. Just view the index.php file in a PHP enabled location.
@@ -39,7 +45,7 @@ Include the meta viewport tag to ensure pages render appropriately on all screen
 <head>
     <title>XFrame</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="css" href="/css/style.css">
+    <link rel="stylesheet" type="css" href="/css/xframe.css">
 </head>
 ```
 
@@ -194,7 +200,7 @@ Place a link to JQuery followed by a link XFrame's main.js file right before the
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript" src="/js/xframe.js"></script>
 
 </body>
 </html>
