@@ -47,90 +47,100 @@ Include the meta viewport tag to ensure pages render appropriately on all screen
 
 Include the xover div to enable full screen overlays.
 
-    <div class="xover">
-        <a href="#" class="close">X</a>
-        <div class="xdata"></div>
-    </div>
+```html
+<div class="xover">
+    <a href="#" class="close">X</a>
+    <div class="xdata"></div>
+</div>
+```
 
 ###Action Menu###
 
 Include the xactions div to enable the Action Menu. The Action Menu will style a standard unordered list but the contents of the xdata div can be whatever is appropriate for that page's specific menu.
 
-    <div class="xactions">
-        <a href="#" class="open">&#10095;</a> <div class="title">Actions</div>
-        <a href="#" class="close">X</a>
-        <div class="xdata">
-            <ul>
-                <li>Save Preferences</li>
-                <li>Tabulate Sum</li>
-                <li>Delete</li>
-                <li>Send an Alert</li>
-                <li>Change Status</li>
-            </ul>
-        </div>
+```html
+<div class="xactions">
+    <a href="#" class="open">&#10095;</a> <div class="title">Actions</div>
+    <a href="#" class="close">X</a>
+    <div class="xdata">
+        <ul>
+            <li>Save Preferences</li>
+            <li>Tabulate Sum</li>
+            <li>Delete</li>
+            <li>Send an Alert</li>
+            <li>Change Status</li>
+        </ul>
     </div>
+</div>
+```
 
 ###Header and Navigation###
 
 These are optional. You can include just the xheader by itself if you wish. The layout will adjust if there's no navigation present. If you include the navigation you must include but the xmenu and xnav divs. The xnav div must contain an unordered list with the xnav id. Nested ULs will be treated as sub-menu items.
 
-    <div class="xheader">
-        <h1>
-            <img src="/img/xframe-logo.png" alt="XFrame" class="xlogo">
-            <a href="/">XFrame</a>
-        </h1>
-    </div>
-    
-    <div id="xmenu">
-        <a href="#">&#9776; Menu</a>
-    </div>
-    <div class="xnav">
-        <ul id="xnav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Network Performance</a></li>
-            <li class="subnav"><a href="/">All Systems</a>
-                <ul>
-                    <li><a href="/">System 1</a></li>
-                    <li><a href="/">System 2</a></li>
-                </ul>
-            </li>
-            <li><a href="/">Reporting</a></li>
-            <li><a href="/">Documentation</a>
-                <ul>
-                    <li><a href="/">Networks</a></li>
-                    <li><a href="/">Systems</a></li>
-                </ul>
-            </li>
-            <li><a href="/">Contact</a></li>
-        </ul>
-    </div>
+```html
+<div class="xheader">
+    <h1>
+        <img src="/img/xframe-logo.png" alt="XFrame" class="xlogo">
+        <a href="/">XFrame</a>
+    </h1>
+</div>
+
+<div id="xmenu">
+    <a href="#">&#9776; Menu</a>
+</div>
+<div class="xnav">
+    <ul id="xnav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Network Performance</a></li>
+        <li class="subnav"><a href="/">All Systems</a>
+            <ul>
+                <li><a href="/">System 1</a></li>
+                <li><a href="/">System 2</a></li>
+            </ul>
+        </li>
+        <li><a href="/">Reporting</a></li>
+        <li><a href="/">Documentation</a>
+            <ul>
+                <li><a href="/">Networks</a></li>
+                <li><a href="/">Systems</a></li>
+            </ul>
+        </li>
+        <li><a href="/">Contact</a></li>
+    </ul>
+</div>
+```
 
 ###Content###
 
 The page's main content are must be contained in an xcontent div.
 
-    <div class="xcontent">
-        <!-- Main Content -->
-    </div>
+```html
+<div class="xcontent">
+    <!-- Main Content -->
+</div>
+```
 
 ###Groups and Posts###
 
 Post are individual boxes of content contained within an xpost classed div. All groups of Posts must be contained within an xgroup div. An xgroup can contain one post or all posts on a page. It allows for better grouping of content as needed.
 
-    <div class="xgroup">
-        <div class="xpost xlg-3 xmed-6">
-            <p>Lorem Ipsum</p>
-        </div>
-        <div class="xpost xlg-3 xmed-6">
-            <p>Lorem Ipsum</p>
-        </div>
-        <div class="xpost xlg-3 xmed-6">
-            <p>Lorem Ipsum</p>
-        </div>
-        <div class="xpost xlg-3 xmed-6">
-            <p>Lorem Ipsum</p>
-        </div>
+```html
+<div class="xgroup">
+    <div class="xpost xlg-3 xmed-6">
+        <p>Lorem Ipsum</p>
     </div>
+    <div class="xpost xlg-3 xmed-6">
+        <p>Lorem Ipsum</p>
+    </div>
+    <div class="xpost xlg-3 xmed-6">
+        <p>Lorem Ipsum</p>
+    </div>
+    <div class="xpost xlg-3 xmed-6">
+        <p>Lorem Ipsum</p>
+    </div>
+</div>
+```
 
 ###12 Column Grid System###
 
@@ -140,46 +150,52 @@ In the example below there will be a row of 4 boxes on large screens (3 columns 
 
 *Big thanks to [Zurb's Foundation Framework](http://foundation.zurb.com/ "Zurb's Foundation Framework") for the inspiration behind the 12 column grid format. I recommend taking a look at Foundation if you have not yet and are interested in front end frameworks.*
 
-    <div class="xgroup">
-        <div class="xpost xlg-3 xmed-6">
-            <p>Lorem Ipsum</p>
-        </div>
-        <div class="xpost xlg-3 xmed-6">
-            <p>Lorem Ipsum</p>
-        </div>
-        <div class="xpost xlg-3 xmed-6">
-            <p>Lorem Ipsum</p>
-        </div>
-        <div class="xpost xlg-3 xmed-6">
-            <p>Lorem Ipsum</p>
-        </div>
+```html
+<div class="xgroup">
+    <div class="xpost xlg-3 xmed-6">
+        <p>Lorem Ipsum</p>
     </div>
+    <div class="xpost xlg-3 xmed-6">
+        <p>Lorem Ipsum</p>
+    </div>
+    <div class="xpost xlg-3 xmed-6">
+        <p>Lorem Ipsum</p>
+    </div>
+    <div class="xpost xlg-3 xmed-6">
+        <p>Lorem Ipsum</p>
+    </div>
+</div>
+```
 
 ###Forms###
 
 Form content should use fieldset and label tags to ensure appropriate formatting.
 
-    <form method="post" action="/">
-        <fieldset>
-            <label for="name">Name</label>
-            <input type="text" name="name">
-        </fieldset>
-        <fieldset>
-            <input type="submit" value="submit">
-        </fieldset>
-    </form>
+```html
+<form method="post" action="/">
+    <fieldset>
+        <label for="name">Name</label>
+        <input type="text" name="name">
+    </fieldset>
+    <fieldset>
+        <input type="submit" value="submit">
+    </fieldset>
+</form>
+```
 
 ###Footer###
 
 Place a link to JQuery followed by a link XFrame's main.js file right before the closing body tag. Use an xfooter classed div for footer content.
 
-    </div><!- closing xcontent div -->
-    <div class="xfooter">
-        <p>&copy; 2014 XFrame</p>
-    </div>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/main.js"></script>
-    
-    </body>
-    </html>
+```html
+</div><!- closing xcontent div -->
+<div class="xfooter">
+    <p>&copy; 2014 XFrame</p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+</body>
+</html>
+```
