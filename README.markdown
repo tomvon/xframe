@@ -39,7 +39,7 @@ XFrame comes with a sample PHP site to preview a working example. Just view the 
 
 ###Head###
 
-Include the meta viewport tag to ensure pages render appropriately on all screen size. Include a link to XFrame's style.css file.
+Include the meta viewport tag to ensure pages render appropriately on all screen sizes. Include a link to XFrame's xframe.css file.
 
 ```html
 <head>
@@ -191,7 +191,7 @@ Form content should use fieldset and label tags to ensure appropriate formatting
 
 ###Footer###
 
-Place a link to JQuery followed by a link XFrame's main.js file right before the closing body tag. Use an xfooter classed div for footer content.
+Place a link to JQuery followed by a link XFrame's xframe.js file right before the closing body tag. Use an xfooter classed div for footer content.
 
 ```html
 </div><!- closing xcontent div -->
