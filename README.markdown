@@ -2,7 +2,7 @@
 
 ##A responsive front end framework for data rich web applications.##
 
-![XFrame Front End Framework Screenshot](/img/xframe.png?raw=true "XFrame Front End Framework Screenshot")
+![XFrame Front End Framework Screenshot](/img/xframe-screen.png?raw=true "XFrame Front End Framework Screenshot")
 
 XFrame is CSS and Javascript geared specifically for data rich web applications. The three main goals for XFrame are: 
 
