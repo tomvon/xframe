@@ -367,14 +367,10 @@ body.xblocks {
     box-shadow: 0 0 20px #000000;
     z-index: 49;
     border-radius: 3px;
+    padding: 5px;
     .xdata {
         margin: 0;
-        padding: 20px 5px 5px 5px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+        clear: both;
         overflow: -moz-scrollbars-vertical;
         overflow: auto;
         box-shadow: none;
@@ -385,14 +381,77 @@ body.xblocks {
             cursor: auto;
         }
     }
-    a.close {
-        position: fixed;
-        top: 7px;
-        right: 7px;
-        z-index: 50;
+}
+
+.xactions {
+    background: #cccccc;
+    position: fixed;
+    top: 25%;
+    left: 0;
+    z-index: 51;
+    border-radius: 0 3px 0 3px;
+    box-shadow: 0 0 5px #666666;
+    width: auto;
+    padding: 5px;
+    .xdata {
+        display: none;
+        clear: both;
+        padding: 0;
+        overflow: -moz-scrollbars-vertical;
+        overflow: auto;
+        box-shadow: none;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            li {
+                padding: 3px 6px 3px 6px;
+                margin-bottom: 2px;
+                background: #eeeeee;
+                border-radius: 3px;
+                box-shadow: inset 0 -3px 10px #dddddd;
+                cursor: pointer;
+            }
+            li:hover {
+                background: #ffffff;
+            }
+        }
+    }
+    .title {
+        display: none;
+        float: left;
+        margin: 3px 5px 0 10px;
+        font-weight: bold;
+    }
+    a.open {
+        display: block;
+        float: left;
+        width: 10px;
+        text-align: center;
+        z-index: 60;
         background: #333333;
         border-radius: 3px;
-        padding: 5px 10px 5px 10px;
+        padding: 3px 8px 3px 8px;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1em;
+        cursor: pointer;
+    }
+    a.close:hover {
+        background: #555555;
+    }
+    a.close {
+        display: none;
+    }
+}
+
+.xover, .xactions {
+    a.close {
+        float: right;
+        background: #333333;
+        border-radius: 3px;
+        padding: 3px 8px 3px 8px;
+        margin-bottom: 5px;
         color: #ffffff;
         font-weight: bold;
         font-size: 1em;
@@ -437,6 +496,14 @@ body.xblocks {
 
 .text-center {
     text-align: center;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
 }
 
 // Medium screens
