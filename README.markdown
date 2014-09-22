@@ -1,16 +1,16 @@
 #XFrame (BETA)#
 
-##A responsive front end framework for data rich web applications.##
+##A responsive front end framework for websites and web applications.##
 
 ![XFrame Front End Framework Screenshot](/img/xframe-colors.jpg?raw=true "XFrame Front End Framework Screenshot")
 
-XFrame is currently in development and there may be still some significant changes, however it is mostly stable in test and I'm using it on projects now. If you wish to use it please be aware of any updates. Please star and/or watch this repo for updates. I would love to hear feedback if you have comments or recommendations.
+XFrame's main goals are: 
+- Create a visually pleasing foundation for semantic HTML markup. 
+- Provide smart handling of large data sets by default.
+- Ensure that websites and apps render appropriately across various screen sizes.
+- Provide a suite of UI tools to enable optimal workflows.
 
-XFrame is CSS and Javascript geared specifically for data rich web applications. The three main goals for XFrame are: 
-
-- Create a visually pleasing and readable foundation for semantic HTML markup. 
-- Provide elegant handling of large data sets by default.
-- Ensure that applications render appropriately across various screen sizes.
+*XFrame is currently in development and there may be still some significant changes, however it is mostly stable in test and I'm using it on projects now. If you wish to use it please be aware of any updates. Please star and/or watch this repo for updates. I would love to hear feedback if you have comments or recommendations.*
 
 ****
 
