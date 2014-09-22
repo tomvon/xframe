@@ -17,12 +17,12 @@ XFrame's main goals are:
 ###Features###
 
 - Supports semantic HTML.
--  Built in responsive navigation based on an standard unordered list (UL). Supports sub navigations items (nested ULs).
+- Built in responsive navigation based on an standard unordered list (UL). Supports sub navigations items (nested ULs).
 -  Responsive 12 column grid system with breakpoints for small, medium and large screens.
--  Auto leveling of column heights for layout consistency.
--  Automatic full screen overlays for wide tables.
--  Clean, readable, visual formatting of pages and all markup including forms and form elements.
-- Easily customizable with CSS.
+- Auto leveling of column heights for layout consistency.
+- Automatic full screen overlays for wide tables.
+- Clean, readable formatting of all markup including forms and form elements.
+- Easy themeimg with SASS.
 - Built with SASS and JQuery.
 
 ****
