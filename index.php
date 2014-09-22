@@ -2,7 +2,11 @@
 
 <div class="xgroup">
 
-    <div class="xpost xmed-4 xlg-8">
+    <div class="xpost xlg-4 xmed-6">
+        <h2>Overview</h2>
+        <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
+    </div>
+    <div class="xpost xlg-8 xmed-6">
     
         <table>
             <thead>
@@ -45,36 +49,12 @@
         <a href="/table.php" class="right">View Full Data</a>
     
     </div>
-    <div class="xpost xlg-4 xmed-8">
-        <h2>Overview</h2>
-        <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
-    </div>
 
 </div>
 
 <div class="xgroup">
 
     <div class="xpost xlg-3 xmed-6">
-        <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
-    </div>
-    
-    <div class="xpost xlg-3 xmed-6">
-        <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours.</p>
-    </div>
-    
-    <div class="xpost xlg-3 xmed-6">
-        <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
-    </div>
-    
-    <div class="xpost xlg-3 xmed-6">
-        <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally. No latency detected in any networks.</p>
-    </div>
-    
-</div>
-
-<div class="xgroup">
-
-    <div class="xpost xlg-4 xmed-6">
         <h3>Network Monitoring</h3>
         <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
         <p class="meta">
@@ -84,8 +64,27 @@
             </ul>
         </p>
     </div>
-
-    <div class="xpost xlg-4 xmed-6">
+    <div class="xpost xlg-3 xmed-6">
+        <h3>Network Monitoring</h3>
+        <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
+        <p class="meta">
+            <ul>
+                <li>Categories: <a href="/">Notices</a>, <a href="/">Warnings</a></li>
+                <li>Tags: <a href="/">normal</a>, <a href="/">urgent</a></li>
+            </ul>
+        </p>
+    </div>
+    <div class="xpost xlg-3 xmed-6">
+        <h3>Network Monitoring</h3>
+        <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
+        <p class="meta">
+            <ul>
+                <li>Categories: <a href="/">Notices</a>, <a href="/">Warnings</a></li>
+                <li>Tags: <a href="/">normal</a>, <a href="/">urgent</a></li>
+            </ul>
+        </p>
+    </div>
+    <div class="xpost xlg-3 xmed-6">
         <form method="post" action="/">
             <fieldset>
                 <label for="name">Name</label>
@@ -114,76 +113,6 @@
                 <input type="submit" value="submit">
             </fieldset>
         </form>
-    </div>
-
-    <div class="xpost xlg-4 xmed-6">
-        <h3>Network Monitoring</h3>
-        <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
-        <p class="meta">
-            <ul>
-                <li>Categories: <a href="/">Notices</a>, <a href="/">Warnings</a></li>
-                <li>Tags: <a href="/">normal</a>, <a href="/">urgent</a></li>
-            </ul>
-        </p>
-    </div>
-    
-    <div class="xpost xlg-4 xmed-6">
-        <h3>Network Monitoring</h3>
-        <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
-        <p class="meta">
-            <ul>
-                <li>Categories: <a href="/">Notices</a>, <a href="/">Warnings</a></li>
-                <li>Tags: <a href="/">normal</a>, <a href="/">urgent</a></li>
-            </ul>
-        </p>
-    </div>
-    
-    <div class="xpost xlg-4 xmed-6">
-        <h3>Network Monitoring</h3>
-        <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
-        <p class="meta">
-            <ul>
-                <li>Categories: <a href="/">Notices</a>, <a href="/">Warnings</a></li>
-                <li>Tags: <a href="/">normal</a>, <a href="/">urgent</a></li>
-            </ul>
-        </p>
-    </div>
-
-</div>
-
-<div class="xgroup">
-
-    <div class="xpost xlg-4 xmed-6">
-        <h3>Network Monitoring</h3>
-        <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
-        <p class="meta">
-            <ul>
-                <li>Categories: <a href="/">Notices</a>, <a href="/">Warnings</a></li>
-                <li>Tags: <a href="/">normal</a>, <a href="/">urgent</a></li>
-            </ul>
-        </p>
-    </div>
-    
-    <div class="xpost xlg-4 xmed-6">
-        <h3>Network Monitoring</h3>
-        <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
-        <p class="meta">
-            <ul>
-                <li>Categories: <a href="/">Notices</a>, <a href="/">Warnings</a></li>
-                <li>Tags: <a href="/">normal</a>, <a href="/">urgent</a></li>
-            </ul>
-        </p>
-    </div>
-    
-    <div class="xpost xlg-4 xmed-6">
-        <h3>Network Monitoring</h3>
-        <p>No latency detected in any networks. Development and production are online. No significant warnings in the last 36 hours. Backups and logging are running normally.</p>
-        <p class="meta">
-            <ul>
-                <li>Categories: <a href="/">Notices</a>, <a href="/">Warnings</a></li>
-                <li>Tags: <a href="/">normal</a>, <a href="/">urgent</a></li>
-            </ul>
-        </p>
     </div>
     
 </div>

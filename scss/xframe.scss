@@ -1,80 +1,156 @@
-@mixin navone {
-background-color: #d6d6d6;
-background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(214, 214, 214)), to(rgb(193, 193, 193)));
-background-image: -webkit-linear-gradient(top, rgb(214, 214, 214), rgb(193, 193, 193));
-background-image: -moz-linear-gradient(top, rgb(214, 214, 214), rgb(193, 193, 193));
-background-image: -o-linear-gradient(top, rgb(214, 214, 214), rgb(193, 193, 193));
-background-image: -ms-linear-gradient(top, rgb(214, 214, 214), rgb(193, 193, 193));
-background-image: linear-gradient(top, rgb(214, 214, 214), rgb(193, 193, 193));
-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#d6d6d6', EndColorStr='#c1c1c1');
+@function swapcolor($color) {
+    @if (lightness($color) > 50) {
+        @return darken($color, 80%);
+    } @else {
+        @return lighten($color, 80%);
+    }
 }
 
-@mixin navtwo {
-background-color: #c1c1c1;
-background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(193, 193, 193)), to(rgb(170, 170, 170)));
-background-image: -webkit-linear-gradient(top, rgb(193, 193, 193), rgb(170, 170, 170));
-background-image: -moz-linear-gradient(top, rgb(193, 193, 193), rgb(170, 170, 170));
-background-image: -o-linear-gradient(top, rgb(193, 193, 193), rgb(170, 170, 170));
-background-image: -ms-linear-gradient(top, rgb(193, 193, 193), rgb(170, 170, 170));
-background-image: linear-gradient(top, rgb(193, 193, 193), rgb(170, 170, 170));
-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#c1c1c1', EndColorStr='#aaaaaa');
+@function accentcolor($color) {
+    @if (lightness($color) == 0) {
+        @return lighten($color, 20%);
+    } @else if (lightness($color) == 100) {
+        @return darken($color, 4%);
+    } @else if (lightness($color) > 0) and (lightness($color) <= 10) {
+        @return lighten($color, 15%);
+    } @else if (lightness($color) > 10) and (lightness($color) <= 50) {
+        @return lighten($color, 15%);
+    } @else if (lightness($color) > 50) and (lightness($color) < 100) {
+        @return darken($color, 10%);
+    }
 }
 
-@mixin navhover {
-background-color: #ebebeb;
-background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(235, 235, 235)), to(rgb(214, 214, 214)));
-background-image: -webkit-linear-gradient(top, rgb(235, 235, 235), rgb(214, 214, 214));
-background-image: -moz-linear-gradient(top, rgb(235, 235, 235), rgb(214, 214, 214));
-background-image: -o-linear-gradient(top, rgb(235, 235, 235), rgb(214, 214, 214));
-background-image: -ms-linear-gradient(top, rgb(235, 235, 235), rgb(214, 214, 214));
-background-image: linear-gradient(top, rgb(235, 235, 235), rgb(214, 214, 214));
-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ebebeb', EndColorStr='#d6d6d6');
+@function accentcolor2($color) {
+    @if (lightness($color) == 0) {
+        @return lighten($color, 25%);
+    } @else if (lightness($color) == 100) {
+        @return darken($color, 10%);
+    } @else if (lightness($color) > 0) and (lightness($color) <= 10) {
+        @return lighten($color, 20%);
+    } @else if (lightness($color) > 10) and (lightness($color) <= 50) {
+        @return lighten($color, 20%);
+    } @else if (lightness($color) > 50) and (lightness($color) < 100) {
+        @return darken($color, 15%);
+    }
 }
 
-@mixin xmenu {
-background-color: #aaaaaa;
-background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(170, 170, 170)), to(rgb(146, 146, 146)));
-background-image: -webkit-linear-gradient(top, rgb(170, 170, 170), rgb(146, 146, 146));
-background-image: -moz-linear-gradient(top, rgb(170, 170, 170), rgb(146, 146, 146));
-background-image: -o-linear-gradient(top, rgb(170, 170, 170), rgb(146, 146, 146));
-background-image: -ms-linear-gradient(top, rgb(170, 170, 170), rgb(146, 146, 146));
-background-image: linear-gradient(top, rgb(170, 170, 170), rgb(146, 146, 146));
-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#aaaaaa', EndColorStr='#929292');
+@function linkcolor($color) {
+  @if (lightness($themecolor) > 50) {
+    @if (lightness($brandcolor) > 50) {
+        @return darken($brandcolor, 50%);
+    } @else {
+        @return $brandcolor;
+    }
+  } @else {
+    @if (lightness($brandcolor) < 50) {
+        @return lighten($brandcolor, 50%);
+    } @else {
+        @return $brandcolor;
+    }
+  }
 }
 
-@mixin xmenuhover {
-background-color: #929292;
-background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(146, 146, 146)), to(rgb(121, 121, 121)));
-background-image: -webkit-linear-gradient(top, rgb(146, 146, 146), rgb(121, 121, 121));
-background-image: -moz-linear-gradient(top, rgb(146, 146, 146), rgb(121, 121, 121));
-background-image: -o-linear-gradient(top, rgb(146, 146, 146), rgb(121, 121, 121));
-background-image: -ms-linear-gradient(top, rgb(146, 146, 146), rgb(121, 121, 121));
-background-image: linear-gradient(top, rgb(146, 146, 146), rgb(121, 121, 121));
-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#929292', EndColorStr='#797979');
+@function adjustcontrast($color) {
+  @if (lightness($themecolor) > 50) {
+    @if (lightness($color) < 50) {
+        @return lighten($brandcolor, 70%);
+    } @else {
+        @return $color;
+    }
+  } @else {
+    @if (lightness($themecolor) < 50) {
+        @if (lightness($color) > 50) {
+            @return darken($color, 70%);
+        } @else {
+            @return $color;
+        }
+    }
+  }
+}
+
+@function themecolor($color,$value) {
+    @if (lightness($color) > 50) {
+        @return darken($color, $value);
+    } @else {
+        @return lighten($color, $value);
+    }
+}
+
+@function themedarken($color,$value) {
+    @return darken($color, $value);
+}
+
+@function themelighten($color,$value) {
+    @return lighten($color, $value);
+}
+
+/*
+Set your brand color here. 
+This will set the color of the header, nav, footer and links.
+*/
+$brandcolor: #336699;
+
+/*
+Set your theme color here. 
+This will set the overall color of the site.
+*/
+$themecolor: #ffffff;
+
+
+$headerfooternavcolor: $brandcolor;
+$headerfooternavtextcolor: swapcolor($brandcolor);
+$headerfooternavlinkcolor: swapcolor($brandcolor);
+$headerfooternavhovercolor: accentcolor2($brandcolor);
+$navsubmenucolor: accentcolor($brandcolor);
+$navsubmenuhovercolor: accentcolor2($brandcolor);
+
+$themeswap: swapcolor($themecolor);
+$themeoffset1: themecolor($themecolor,5%);
+$themeoffset2: themecolor($themecolor,10%);
+$themeoffset3: themecolor($themecolor,20%);
+$themeoffset4: themecolor($themecolor,30%);
+$themeoffset5: themecolor($themecolor,40%);
+$themeoffset6: themecolor($themecolor,50%);
+$themeoffset7: themecolor($themecolor,60%);
+$themeoffset8: themecolor($themecolor,70%);
+$themeoffset9: themecolor($themecolor,80%);
+$themeoffset10: themecolor($themecolor,90%);
+
+$tdgreen: adjustcontrast(#ccffcc);
+$tdred: adjustcontrast(#ffcccc);
+$tdyellow: adjustcontrast(#ffffcc);
+
+@mixin button {
+    border: 0;
+    padding: 3%;
+    font-size: 1.1em;
+    border-radius: 5px;
+    background: $brandcolor;
+    color: $headerfooternavtextcolor;
+    box-shadow: inset 1px 3px 8px themelighten($brandcolor,10%), inset -1px -3px 8px themedarken($brandcolor,10%);
+    cursor: pointer;
+    text-align: center;
+    border: solid 3px $themeoffset2;
 }
 
 body {
     font-size: .9em;
     line-height: 1.4em;
     font-family: sans-serif;
-    background: #eeeeee;
-    color: #000000;
+    background: $themeoffset2;
+    color: $themeswap;
     max-width: 1100px;
     margin: 0 auto 0 auto;
     padding: 2%;
 }
 
-a {
+a, a:visited {
     text-decoration: none;
-    color: #3377bb;
-}
-
-a:visited {
-    color: #3377bb;
+    color: linkcolor($brandcolor);
 }
 
 a:hover {
-    color: #5599dd;
+    color: themecolor(linkcolor($brandcolor),20%);
 }
 
 img {
@@ -84,7 +160,7 @@ img {
 
 img.xfeature {
     cursor: pointer;
-    box-shadow: 0 0 2px #333333;
+    box-shadow: 0 0 2px $themeoffset8;
 }
 
 div {
@@ -102,26 +178,26 @@ thead {
 
 td {
     font-size: .9em;
-    border: solid 1px #cccccc;
+    border: solid 1px $themeoffset3;
     padding: 1%;
     white-space: nowrap;
 }
 
 td.green {
-    background: #eeffee;
+    background: $tdgreen;
 }
 
 td.red {
-    background: #ffeeee;
+    background: $tdred;
 }
 
 td.yellow {
-    background: #ffffee;
+    background: $tdyellow;
 }
 
 h1, h2, h3, h4, h5 , h6 {
     margin: 1% 0 1% 0;
-    color: #333333;
+    color: $themeoffset8;
 }
 
 h1 {
@@ -178,26 +254,24 @@ form {
     input[type=text], textarea {
         width: 94%;
         margin: 0;
-        background: #dddddd;
+        background: $themeoffset3;
+        color: swapcolor($themecolor);
         border-radius: 3px;
-        border: #cccccc;
+        border: 0;
         padding: 2%;
         font-size: 1em;
         line-height: 1.4em;
-        box-shadow: inset 3px 3px 5px #cccccc, inset -3px -3px 5px #eeeeee;
+        box-shadow: inset 3px 3px 5px themedarken($themeoffset3,10%), inset -3px -3px 5px themelighten($themeoffset3,10%);
     }
     input[type=submit] {
         float: right;
-        border: 0;
-        padding: 3%;
-        font-size: 1.1em;
-        border-radius: 3px;
-        box-shadow: inset 2px 5px 8px #eeeeee, inset -2px -5px 8px #aaaaaa;
-        text-shadow: 1px 1px 1px #dddddd;
-        cursor: pointer;
+        @include button;
     }
     input[type=submit]:hover {
-        background: #cccccc;
+        background: $themeoffset1;
+    }
+    input[type=submit]:active {
+        background: $themecolor;
     }
 }
 
@@ -226,9 +300,8 @@ body.xblocks {
 }
 
 .xheader, .xfooter {
-    color: #444444;
-    text-shadow: 1px 1px 1px #eeeeee;
-    @include navone;
+    color: $headerfooternavtextcolor;
+    background: $headerfooternavcolor;
     padding-left: 3%;
     border-radius: 2px;
 }
@@ -237,7 +310,7 @@ body.xblocks {
     margin-top: 2%;
     padding-top: 3%;
     h1 {
-        color: #444444;
+        color: $headerfooternavtextcolor;
         margin: 1% 0 1% 0;
         line-height: 1.2em;
         .xlogo {
@@ -248,22 +321,21 @@ body.xblocks {
         }
     }
     a {
-        color: #000000;
+        color: $headerfooternavlinkcolor;
     }
 }
 
 #xmenu {
-    @include xmenu;
+    background: $headerfooternavcolor;
     a {
         font-weight: bold;
         display: block;
-        color: #222222;
-        text-shadow: 1px 1px 1px #cccccc;
+        color: $headerfooternavtextcolor;
     }
 }
 
 #xmenu:hover {
-    @include xmenuhover;
+    background: $headerfooternavhovercolor;
 }
 
 .xnav {
@@ -281,36 +353,38 @@ body.xblocks {
                 position: absolute;
                 right: 8px;
                 z-index: 21;
-                @include xmenu;
+                background: $navsubmenucolor;
                 padding: 0px 10px 0px 10px;
                 border-radius: 3px;
-                text-shadow: 1px 1px 1px #dddddd;
                 cursor: pointer;
                 margin-top: 2%;
+                color: $headerfooternavtextcolor;
             }
             .menu:hover {
-                @include xmenuhover;
+                background: $headerfooternavhovercolor;
             }
             a {
                 box-sizing: border-box;
                 display: block;
                 width: auto;
                 padding: 2%;
-                @include navone;
+                background: $headerfooternavcolor;
                 margin-bottom: 2px;
-                color: #333333;
-                text-shadow: 1px 1px 1px #eeeeee;
+                color: $headerfooternavtextcolor;
                 border-radius: 2px;
             }
             a:hover {
-                @include navhover;
+                background: $headerfooternavhovercolor;
             }
             ul {
                 display: none;
                 li {
                     a {
-                        @include navtwo;
+                        background: $navsubmenucolor;
                         padding-left: 4%;
+                    }
+                    a:hover {
+                        background: $navsubmenuhovercolor;
                     }
                 }
             }
@@ -323,7 +397,7 @@ body.xblocks {
     margin: 2% 0 0 0;
     width: 100%;
     a {
-        background: #f6f6f6;
+        background: $themeoffset1;
         padding: 0 5px 0 5px;
         border-radius: 3px;
     }
@@ -332,7 +406,7 @@ body.xblocks {
         overflow: hidden;
     }
     .xpost {
-        background: #ffffff;
+        background: $themecolor;
         padding: 3%;
         margin: 1% 1% 3% 1%;
         float: left;
@@ -358,13 +432,13 @@ body.xblocks {
 
 .xover {
     display: none;
-    background: #ffffff;
+    background: $themecolor;
     position: fixed;
     top: 5px;
     right: 5px;
     bottom: 5px;
     left: 5px;
-    box-shadow: 0 0 20px #000000;
+    box-shadow: 0 0 20px $themeswap;
     z-index: 49;
     border-radius: 3px;
     padding: 5px;
@@ -384,13 +458,13 @@ body.xblocks {
 }
 
 .xactions {
-    background: #cccccc;
+    background: $themeoffset3;
     position: fixed;
     top: 25%;
     left: 0;
     z-index: 51;
     border-radius: 0 3px 0 3px;
-    box-shadow: 0 0 5px #666666;
+    box-shadow: 0 0 5px darken($themeoffset1,20%);
     width: auto;
     padding: 5px;
     .xdata {
@@ -400,20 +474,20 @@ body.xblocks {
         overflow: -moz-scrollbars-vertical;
         overflow: auto;
         box-shadow: none;
-        ul {
+        ul.buttons {
             list-style-type: none;
             margin: 0;
             padding: 0;
             li {
                 padding: 3px 6px 3px 6px;
                 margin-bottom: 2px;
-                background: #eeeeee;
+                background: $themeoffset2;
                 border-radius: 3px;
-                box-shadow: inset 0 -3px 10px #dddddd;
+                box-shadow: inset 0 -3px 10px darken($themeoffset2,10%);
                 cursor: pointer;
             }
             li:hover {
-                background: #ffffff;
+                background: $themeoffset3;
             }
         }
     }
@@ -429,16 +503,16 @@ body.xblocks {
         width: 10px;
         text-align: center;
         z-index: 60;
-        background: #333333;
+        background: $themeoffset8;
         border-radius: 3px;
         padding: 3px 8px 3px 8px;
-        color: #ffffff;
+        color: $themecolor;
         font-weight: bold;
         font-size: 1em;
         cursor: pointer;
     }
     a.close:hover {
-        background: #555555;
+        background: $themeoffset6;
     }
     a.close {
         display: none;
@@ -448,17 +522,17 @@ body.xblocks {
 .xover, .xactions {
     a.close {
         float: right;
-        background: #333333;
+        background: $themeoffset8;
         border-radius: 3px;
         padding: 3px 8px 3px 8px;
         margin-bottom: 5px;
-        color: #ffffff;
+        color: $themecolor;
         font-weight: bold;
         font-size: 1em;
         cursor: pointer;
     }
     a.close:hover {
-        background: #555555;
+        background: $themeoffset6;
     }
 }
 
@@ -472,18 +546,13 @@ body.xblocks {
     p {
         width: 50%;
         position: absolute;
-        top: 43%;
-        left: 23%;
+        top: 40%;
+        left: 20%;
         margin: 0 auto 0 auto;
-        text-align: center;
-        background: #444444;
-        color: #ffffff;
-        border-radius: 3px;
-        cursor: pointer;
-        padding: 2%;
+        @include button;
     }
     p:hover {
-        background: #666666;
+        background: $themeoffset1;
     }
 }
 
@@ -676,8 +745,8 @@ body.xblocks {
                     padding: 2%;
                 }
                 ul {
-                    background: #cccccc;
-                    box-shadow: 2px 2px 5px #aaaaaa;
+                    background: $themeoffset3;
+                    box-shadow: 2px 2px 5px $themeoffset5;
                     position: absolute;
                     right: 0;
                     top: 20;

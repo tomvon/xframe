@@ -2,7 +2,7 @@
 
 ##A responsive front end framework for data rich web applications.##
 
-![XFrame Front End Framework Screenshot](/img/xframe-screen.png?raw=true "XFrame Front End Framework Screenshot")
+![XFrame Front End Framework Screenshot](/img/xframe-colors.jpg?raw=true "XFrame Front End Framework Screenshot")
 
 XFrame is currently in development and there may be still some significant changes, however it is mostly stable in test and I'm using it on projects now. If you wish to use it please be aware of any updates. Please star and/or watch this repo for updates. I would love to hear feedback if you have comments or recommendations.
 
@@ -36,6 +36,24 @@ Link to XFrame's **xframe.css** and **xframe.js** files from your web page and m
 ###Documentation###
 
 XFrame comes with a sample PHP site to preview a working example. Just view the index.php file in a PHP enabled location.
+
+###Themeing###
+
+To use a custom color scheme just edit the $brandcolor (for the header, navigation, footer and link colors) and $themecolor (for the main content colors) in the xframe.scss file.
+
+```scss
+/*
+Set your brand color here. 
+This will set the color of the header, nav, footer and links.
+*/
+$brandcolor: #000000;
+
+/*
+Set your theme color here. 
+This will set the overall color of the site.
+*/
+$themecolor: #333333;
+```
 
 ###Head###
 

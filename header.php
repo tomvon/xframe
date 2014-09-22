@@ -17,7 +17,7 @@
     <a href="#" class="open">&#10095;</a> <div class="title">Actions</div>
     <a href="#" class="close">X</a>
     <div class="xdata">
-        <ul>
+        <ul class="buttons">
         	<li>Save Preferences</li>
         	<li>Tabulate Sum</li>
         	<li>Delete</li>
@@ -29,7 +29,6 @@
 
 <div class="xheader">
     <h1>
-        <img src="/img/xframe-logo.png" alt="XFrame" class="xlogo">
         <a href="/">XFrame</a>
     </h1>
 </div>
