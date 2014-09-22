@@ -46,13 +46,13 @@ To use a custom color scheme just edit the $brandcolor (for the header, navigati
 Set your brand color here. 
 This will set the color of the header, nav, footer and links.
 */
-$brandcolor: #000000;
+$brandcolor: #336699;
 
 /*
 Set your theme color here. 
 This will set the overall color of the site.
 */
-$themecolor: #333333;
+$themecolor: #ffffff;
 ```
 
 ###Head###
