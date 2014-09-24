@@ -35,6 +35,9 @@ function sizer(s) {
                     len = 0;
                 }
             }
+            if ($(this).hasClass('square')) {
+                $(this).height($(this).width());
+            }
         });
     });
 }
