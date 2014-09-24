@@ -4,7 +4,7 @@
 	<title>XFrame</title>
 	<meta charset="iso-8859-15" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" type="css" href="/css/xframe.css">
+	<link rel="stylesheet" type="css" href="css/xframe.css">
 </head>
 <body>
 

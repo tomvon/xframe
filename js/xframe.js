@@ -99,10 +99,49 @@ $(document).ready(function() {
     $(window).resize( function() {
         setsize();
         tablelaunch();
+        if ($('.xnav').is(':visible')) {
+            if ($(window).width() > 500) {
+                $('#xmenu').css({'margin-bottom':'2px'});
+                $('.xnav').css({'margin-bottom':'1%'});
+            }
+            if ($(window).width() <= 500) {
+                $('#xmenu').css({'margin-bottom':'2px'});
+                $('.xnav').css({'margin-bottom':'3%'});
+            }
+        } else {
+            if ($(window).width() > 500) {
+                $('#xmenu').css({'margin-bottom':'1%'});
+                $('.xnav').css({'margin-bottom':'1%'});
+            }
+            if ($(window).width() <= 500) {
+                $('#xmenu').css({'margin-bottom':'3%'});
+                $('.xnav').css({'margin-bottom':'3%'});
+            }
+        }
     });
     
     $('#xmenu a').on('click', function() {
-        $('.xnav').toggle('fast');
+        if ($('.xnav').is(':hidden')) {
+            $('.xnav').show('fast');
+            if ($(window).width() > 500) {
+                $('#xmenu').css({'margin-bottom':'2px'});
+                $('.xnav').css({'margin-bottom':'1%'});
+            }
+            if ($(window).width() <= 500) {
+                $('#xmenu').css({'margin-bottom':'2px'});
+                $('.xnav').css({'margin-bottom':'3%'});
+            }
+        } else {
+            $('.xnav').hide('fast');
+            if ($(window).width() > 500) {
+                $('#xmenu').css({'margin-bottom':'1%'});
+                $('.xnav').css({'margin-bottom':'1%'});
+            }
+            if ($(window).width() <= 500) {
+                $('#xmenu').css({'margin-bottom':'3%'});
+                $('.xnav').css({'margin-bottom':'3%'});
+            }
+        }
         return false;
     });
     
